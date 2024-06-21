@@ -30,7 +30,7 @@ export default function Chat() {
     <div className='grid h-screen w-full pl-[53px]'>
       {/* Sidebar */}
       <aside className='inset-y fixed left-0 z-20 flex h-full flex-col border-r'>
-        <nav className='grid gap-1 p-2'>
+        <nav className='grid gap-1 px-2 py-4'>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -139,7 +139,7 @@ export default function Chat() {
             </Tooltip>
           </TooltipProvider>
         </nav>
-        <nav className='mt-auto grid gap-1 p-2'>
+        <nav className='mt-auto grid gap-1 px-2 py-4'>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
