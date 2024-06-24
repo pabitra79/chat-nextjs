@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='py-4'>
+    <footer className='py-4 border-t'>
       <div className='container'>
         <p className='text-center text-sm text-gray-500'>
           &copy; {new Date().getFullYear()} Your Company. All rights reserved.
