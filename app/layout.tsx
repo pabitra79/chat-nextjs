@@ -4,6 +4,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import { ThemeProvider } from '@/components/theme-provider'
 
 import './globals.css'
+import Providers from '@/components/providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,15 +25,8 @@ export default function RootLayout({
         className='scroll-smooth antialiased'
         suppressHydrationWarning
       >
-        <body className={`flex min-h-screen flex-col ${inter.className}`}>
-          <ThemeProvider
-            enableSystem
-            attribute='class'
-            defaultTheme='system'
-            disableTransitionOnChange
-          >
-            <main className='grow'>{children}</main>
-          </ThemeProvider>
+        <body className={`${inter.className}`}>
+          <Providers>{children}</Providers>
         </body>
       </html>
     </ClerkProvider>
