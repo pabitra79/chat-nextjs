@@ -38,7 +38,7 @@ function Layout({ children }: { children: React.ReactNode }) {
   const isChat = pathname.startsWith('/chat')
 
   if (isChat) {
-    return children
+    return children;
   }
 
   return (
